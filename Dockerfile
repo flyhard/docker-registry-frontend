@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM debian:wheezy
 MAINTAINER "Konrad Kleine"
 
 
@@ -46,7 +46,7 @@ RUN a2enmod proxy_http
 # element that are matched by .dockerignore.
 # We explicitly list every directory and file that is involved
 # in the build process but. All config files (like nginx) are
-# not listed to speed up the build process. 
+# not listed to speed up the build process.
 ############################################################
 
 # Create dirs
